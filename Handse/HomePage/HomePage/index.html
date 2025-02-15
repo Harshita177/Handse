@@ -13,7 +13,7 @@
         <nav>
             <div class="nav__bar">
                 <div class="logo">
-                    <a href="#"><img src="logo.png" alt="logo" /></a>
+                    <a href="#"><img src="logo.png" alt="logo" />HANDSE</a>
                 </div>
                 <div class="nav__menu__btn" id="menu-btn">
                     <i class="ri-menu-line"></i>
@@ -35,12 +35,20 @@
                     <a href="#feedback">Feedback</a>
                 </div>
             </div>
-            <a href="C:\Users\darshika\OneDrive\Desktop\Django\my_venv\Scripts\Handse\Handse\Translator\index2.html" class="btn nav__btn">Try Now</a>
+            <a href="C:\Users\darshika\OneDrive\Desktop\Django\my_venv\Scripts\Handse\Handse\Translator and Detector\translation.html"
+             id="try-now-btn" class="btn nav__btn">Start Now</a>
         </nav>
         <div class="section__container header__container" id="home">
-            <img src="Sign.png" alt="Sign">
-            <div id="overlay">
-                <div class="centered"><h1><span>Handse</span></h1></div>
+            <div class="slideshow">
+                <div class="slides">
+                    <img src="image1.jpg" alt="Slide 1" class="slide active">
+                    <img src="image2.jpg" alt="Slide 2" class="slide">
+                    <img src="image3.jpg" alt="Slide 3" class="slide">
+                </div>
+                <div class="slideshow-controls">
+                    <button class="prev-btn">&#10094;</button>
+                    <button class="next-btn">&#10095;</button>
+                </div>
             </div>
         </div>
     </header>
@@ -68,7 +76,29 @@
         <div class="section__container userguide__container">
             <div class="userguide__content">
                 <p class="section__subheader">USER GUIDE</p>
-                <h2 class="section__header">Strive Only For The Best.</h2>
+                <h2 class="section__header">How to Use Handse</h2>
+                <p class="section__description">
+                    Handse is a 2-way sign language translator and detector that supports both <strong>American Sign Language (ASL)</strong> 
+                    and <strong>Indian Sign Language (ISL)</strong>. Follow these steps to get started:
+                </p>
+                <div class="guide-steps">
+                    <div class="step">
+                        <h3>Step 1: Select Language</h3>
+                        <p>Choose between ASL (English) or ISL (Hindi) for translation.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 2: Sign Detection</h3>
+                        <p>Use your webcam to perform sign language gestures. Handse will detect and translate them in real-time.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 3: Text Input</h3>
+                        <p>Type or speak text, and Handse will convert it into sign language animations.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Step 4: Practice & Learn</h3>
+                        <p>Use the interactive learning modules to improve your sign language skills.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -79,28 +109,43 @@
         <div class="features__content">
             <div class="feature-box-first">
                 <i class="feature-icon fas fa-globe"></i>
-                <h2>Real-time Translation</h2>
+                <h2><strong>Real-time Translation</strong></h2>
                 <p class="feature-description">Experience seamless communication with our cutting-edge real-time sign language translation.</p>
             </div>
             <div class="feature-box-second">
                 <i class="feature-icon fas fa-language"></i>
-                <h2>Multi-lingual Support</h2>
+                <h2><strong>Multi-lingual Support</strong></h2>
                 <p class="feature-description">Break down language barriers with our support for multiple spoken and sign languages.</p>
             </div>
             <div class="feature-box-third">
                 <i class="feature-icon fas fa-hand-holding-user"></i>
-                <h2>Sign Language Recognition</h2>
+                <h2><strong>Sign Language Recognition</strong></h2>
                 <p class="feature-description">Our advanced AI accurately recognizes a wide range of sign language gestures.</p>
             </div>
             <div class="feature-box-first">
                 <i class="feature-icon fas fa-users"></i>
-                <h2>Community Forum</h2>
+                <h2><strong>Community Forum</strong></h2>
                 <p class="feature-description">Connect with a global community of sign language users and learners.</p>
             </div>
             <div class="feature-box-second">
                 <i class="feature-icon fas fa-user-cog"></i>
-                <h2>Personalized Settings</h2>
+                <h2><strong>Personalized Settings</strong></h2>
                 <p class="feature-description">Customize your translation experience with personalized settings.</p>
+            </div>
+            <div class="feature-box-third">
+                <i class="feature-icon fas fa-video"></i>
+                <h2><strong>Webcam Integration</strong></h2>
+                <p class="feature-description">Use your webcam for real-time sign language detection and translation.</p>
+            </div>
+            <div class="feature-box-first">
+                <i class="feature-icon fas fa-image"></i>
+                <h2><strong>Image & Video Support</strong></h2>
+                <p class="feature-description">Upload images or videos for sign language translation.</p>
+            </div>
+            <div class="feature-box-second">
+                <i class="feature-icon fas fa-microphone"></i>
+                <h2><strong>Audio-to-Text Conversion</strong></h2>
+                <p class="feature-description">Convert spoken language into text for sign language translation.</p>
             </div>
         </div>
     </section>
@@ -117,7 +162,8 @@
                     through our 2-way sign language translator and detector.Stay connected with us for updates, 
                     resources, and community support as we work together to foster understanding and inclusivity.
                 </p>
-                <button class="btn">Try Now</button>
+                <a href="# C:\Users\darshika\OneDrive\Desktop\Django\my_venv\Scripts\Handse\Handse\Translator and Detector\translation.html"
+             id="try-now-btn" class="btn nav__btn">Try Now</a>
             </div>
             
             <div class="footer__col">

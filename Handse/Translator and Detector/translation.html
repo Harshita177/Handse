@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation & Detector</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="translation-container">
+        <!-- Sidebar for Mode and Language Selection -->
+        <div class="translation-sidebar">
+            <h2>Translation & Detector</h2>
+            <div class="selection">
+                <label for="mode">Select Mode:</label>
+                <select id="mode">
+                    <option value="sign-to-text">Sign to Text</option>
+                    <option value="text-to-sign">Text to Sign</option>
+                </select>
+            </div>
+            <div class="selection">
+                <label for="language">Select Language:</label>
+                <select id="language">
+                    <option value="asl-english">ASL - English</option>
+                    <option value="isl-hindi">ISL - Hindi</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="translation-main">
+            <!-- Input Section -->
+            <div class="input-section">
+                <h3>Input</h3>
+                <textarea id="input-text" placeholder="Type your text here..."></textarea>
+                <div class="input-icons">
+                    <div class="icon" id="input-audio" title="Audio Input">
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <div class="icon" id="input-image" title="Upload Image">
+                        <i class="fas fa-image"></i>
+                        <input type="file" id="image-upload" accept="image/*" style="display: none;">
+                    </div>
+                    <div class="icon" id="input-video" title="Upload Video">
+                        <i class="fas fa-video"></i>
+                        <input type="file" id="video-upload" accept="video/*" style="display: none;">
+                    </div>
+                    <div class="icon" id="input-webcam" title="Webcam">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Output Section -->
+            <div class="output-section">
+                <h3>Output</h3>
+                <div class="output-box">
+                    <p>Your translated output will appear here.</p>
+                </div>
+                <img src="assets/output-image.png" alt="Output Image" class="output-image">
+            </div>
+        </div>
+    </div>
+
+    <script src="translation.js"></script>
+</body>
+</html>
